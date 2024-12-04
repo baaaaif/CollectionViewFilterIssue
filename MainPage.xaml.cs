@@ -19,13 +19,13 @@ namespace CollectionViewFilterIssue
             InitializeComponent();
             this.BindingContext = this;
             this.listView.FilterDescriptors.Add(new BooleanFilterDescriptor { PropertyName = nameof(MenuItem.Visible), Value = true });
-            item1 = new MenuItem() { Title = "Item 1", Visible = true };
-            item2 = new MenuItem() { Title = "Item 2", Visible = true };
-            item3 = new MenuItem() { Title = "Item 3", Visible = true };
-            item4 = new MenuItem() { Title = "Item 4", Visible = true };
-            item5 = new MenuItem() { Title = "Item 5", Visible = true };
-            item6 = new MenuItem() { Title = "Item 6", Visible = true };
-            item7 = new MenuItem() { Title = "Item 7", Visible = true };
+            item1 = new MenuItem() { Title = "Item 1", Visible = true, Index = 0 };
+            item2 = new MenuItem() { Title = "Item 2", Visible = true, Index = 1 };
+            item3 = new MenuItem() { Title = "Item 3", Visible = true, Index = 2 };
+            item4 = new MenuItem() { Title = "Item 4", Visible = true, Index = 3 };
+            item5 = new MenuItem() { Title = "Item 5", Visible = true, Index = 4 };
+            item6 = new MenuItem() { Title = "Item 6", Visible = true, Index = 5 };
+            item7 = new MenuItem() { Title = "Item 7", Visible = true, Index = 6 };
 
             MenuItems.Add(item1);
             MenuItems.Add(item2);
